@@ -209,7 +209,8 @@ body {
     height: 100vh;
     grid-template-areas: "sidebar" "content" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 800px 250px;
+    grid-template-rows: 8.15em 800px 15.68em;
+    /* 130px 800px 250px */
     /* sidebar */
     /* content */
     /* footer */ }
@@ -237,8 +238,43 @@ body {
               opacity: 1; }
     body .container .content {
       grid-area: content;
-      background: url(https://image.noelshack.com/fichiers/2018/33/7/1534696354-img-2.jpg);
-      padding: 1em; }
+      background-image: url(https://image.noelshack.com/fichiers/2018/33/7/1534702227-img-2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      /*padding: 1em; */ }
+      body .container .content .overlay {
+        width: 100%;
+        height: 100%;
+        /*background-color: rgba(19, 17, 17, 0.55);*/ }
+        body .container .content .overlay .hero-profil {
+          max-width: 60.22em;
+          /*960px */
+          margin: 0 auto;
+          text-align: center;
+          padding: 1em; }
+          body .container .content .overlay .hero-profil .hero-image {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 200px;
+            margin-bottom: 1em; }
+          body .container .content .overlay .hero-profil .hero-title {
+            font-size: 2em;
+            font-weight: 300;
+            color: #373d46; }
+          body .container .content .overlay .hero-profil .hero-intro {
+            margin: 1em 0;
+            font-weight: 300;
+            line-height: 1.8em;
+            color: #98a0ad; }
+          body .container .content .overlay .hero-profil .action-btn {
+            text-decoration: none;
+            background-color: #867bfb;
+            color: #fff;
+            font-weight: 700;
+            padding: .5em 2em;
+            border-radius: 40px; }
     body .container .footer {
       grid-area: footer;
       color: #fff;
