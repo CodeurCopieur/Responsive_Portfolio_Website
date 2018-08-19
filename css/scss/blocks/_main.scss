@@ -3,9 +3,35 @@ body {
     /* BASE */
     
 	font-family: 'Nunito', sans-serif;
-    background: #EFF1F7;
+    background: $grey; /* colors.scss */
+   
+    .container {
+        
+        font-size: 1.5em;
+        width: 100%;
+        height: 100vh;
+        
+        /* sidebar */
+        .sidebar {
+            grid-area: sidebar;
+            @extend %bckg-linear;  /* placeholders.scss */
+            justify-content: center;
+        }
     
-    /*  */
+    /* content */
+    
+        .content {
+            grid-area: content;
+            background: url(https://image.noelshack.com/fichiers/2018/33/7/1534682644-img-2.jpg);
+        }
+        
+        
+        .footer {
+            grid-area: footer;
+            color: $white;
+        }
+        
+    }    
     
     
 }
