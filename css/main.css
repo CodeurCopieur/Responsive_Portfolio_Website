@@ -207,15 +207,39 @@ body {
     font-size: 1.5em;
     width: 100%;
     height: 100vh;
+    grid-template-areas: "sidebar" "content" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px;
     /* sidebar */
-    /* content */ }
+    /* content */
+    /* footer */ }
     body .container .sidebar {
       grid-area: sidebar;
       /* placeholders.scss */
-      justify-content: center; }
+      justify-content: center;
+      padding: 1em; }
+      body .container .sidebar .sidebar-container-link .sidebar-list-link {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center; }
+        body .container .sidebar .sidebar-container-link .sidebar-list-link .sidebar-links {
+          list-style: none;
+          padding: 1em 0; }
+          body .container .sidebar .sidebar-container-link .sidebar-list-link .sidebar-links .sidebar-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            opacity: .6;
+            transition: .3s; }
+            body .container .sidebar .sidebar-container-link .sidebar-list-link .sidebar-links .sidebar-link:hover {
+              opacity: 1; }
     body .container .content {
       grid-area: content;
-      background: url(https://image.noelshack.com/fichiers/2018/33/7/1534682644-img-2.jpg); }
+      background: url(https://image.noelshack.com/fichiers/2018/33/7/1534696354-img-2.jpg);
+      padding: 1em; }
     body .container .footer {
       grid-area: footer;
-      color: #fff; }
+      color: #fff;
+      padding: 1em; }
