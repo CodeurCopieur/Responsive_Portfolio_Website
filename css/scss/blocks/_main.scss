@@ -9,12 +9,13 @@ body {
         font-size: 1.5em;
         width: 100%;
         height: 100vh;
+        display: grid;
         grid-template-areas: 
             "sidebar"
             "content"
             "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 8.15em 800px 15.68em; /* 130px 800px 250px */
+        grid-template-rows: 130px 800px 250px; /* 130px 800px 250px */
             
         /* sidebar */
         .sidebar {
@@ -61,7 +62,7 @@ body {
             background-position: center;
             background-size: cover;
             height: 100vh;
-            /*padding: 1em; */
+            padding: 1em;
             
             .overlay {
                 width: 100%;
@@ -69,10 +70,9 @@ body {
                 /*background-color: rgba(19, 17, 17, 0.55);*/
            
                 .hero-profil {
-                    max-width: 60.22em; /*960px */
+                    max-width: 960px;
                     margin: 0 auto;
                     text-align: center;
-                    padding: 1em;
 
                     .hero-image{
                         border: 2px solid $white;
@@ -96,11 +96,17 @@ body {
 
                     .action-btn {
                         text-decoration: none;
-                        background-color: $violet;
+                        background-color: $blue;
                         color: $white;
                         font-weight: 700;
                         padding: .5em 2em;
                         border-radius: 40px;
+                        margin: 1em 0;
+                        transition: .3s;
+                        
+                        &:hover {
+                            box-shadow: 0 10px 50px $blue-2;
+                        }
                     }
                 }
                 
@@ -112,9 +118,125 @@ body {
             grid-area: footer;
             color: $white;
             padding: 1em;
+            
+            .footer-container-link {
+                
+                .footer-list-link {
+                    max-width: 648px;
+                    margin: 2em auto;
+                    padding: 0;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .footer-links {
+                        list-style: none;
+                        align-self: flex-end;
+                        
+                        .footer-link{
+                            text-decoration: none;
+                            color: $grey-5;
+                            
+                            svg {
+                                width: 40%;
+                            }
+                            .nb_followers {
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
         
-    }    
+    }
+    @media (min-width: 1040px) {
+    .container {
+        grid-template-areas: 
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+        
+        .sidebar{
+            background:linear-gradient(135deg, #01579b 0%, #039be5 100%);
+            padding-top: 3em;
+            
+            .sidebar-container-link {
+                .sidebar-list-link {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+                
+            }
+        }
+        
+        .content {
+            
+            .overlay {
+               
+           
+                .hero-profil {
+                   
+                    text-align: left;
+                    margin: 2em auto;
+                    
+                    .hero-image{
+                        width: 250px;
+                        float: right;
+                    }
+
+                    .hero-title {
+                        font-size: 3em;
+                    }
+
+                    .hero-intro {
+                       width: 60%;
+                    }
+                    
+                    .action-btn {
+                        margin-top: 2em;
+                    }
+                }
+                
+            }
+            
+        }
+        
+         .footer {
+            
+            
+            .footer-container-link {
+                
+                .footer-list-link {
+                    max-width: 960px;
+                    margin: 0 auto;
+                    padding: 2em 0;
+                    
+                    .footer-links {
+                        
+                        
+                        .footer-link{
+                            
+                            
+                            svg {
+                               width: 20%;
+                            }
+                            .nb_followers {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        
+    }
+}
     
     
 }
