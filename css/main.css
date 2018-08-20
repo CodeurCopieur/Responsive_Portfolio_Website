@@ -245,39 +245,35 @@ body {
       background-size: cover;
       height: 100vh;
       padding: 1em; }
-      body .container .content .overlay {
-        width: 100%;
-        height: 100%;
-        /*background-color: rgba(19, 17, 17, 0.55);*/ }
-        body .container .content .overlay .hero-profil {
-          max-width: 960px;
-          margin: 0 auto;
-          text-align: center; }
-          body .container .content .overlay .hero-profil .hero-image {
-            border: 2px solid #fff;
-            border-radius: 50%;
-            width: 200px;
-            margin-bottom: 1em; }
-          body .container .content .overlay .hero-profil .hero-title {
-            font-size: 2em;
-            font-weight: 300;
-            color: #373d46; }
-          body .container .content .overlay .hero-profil .hero-intro {
-            margin: 1em 0;
-            font-weight: 300;
-            line-height: 1.8em;
-            color: #98a0ad; }
-          body .container .content .overlay .hero-profil .action-btn {
-            text-decoration: none;
-            background-color: #01579b;
-            color: #fff;
-            font-weight: 700;
-            padding: .5em 2em;
-            border-radius: 40px;
-            margin: 1em 0;
-            transition: .3s; }
-            body .container .content .overlay .hero-profil .action-btn:hover {
-              box-shadow: 0 10px 50px #039be5; }
+      body .container .content .hero-profil {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center; }
+        body .container .content .hero-profil .hero-image {
+          border: 2px solid #fff;
+          border-radius: 50%;
+          width: 200px;
+          margin-bottom: 1em; }
+        body .container .content .hero-profil .hero-title {
+          font-size: 2em;
+          font-weight: 300;
+          color: #373d46; }
+        body .container .content .hero-profil .hero-intro {
+          margin: 1em 0;
+          font-weight: 300;
+          line-height: 1.8em;
+          color: #98a0ad; }
+        body .container .content .hero-profil .action-btn {
+          text-decoration: none;
+          background-color: #01579b;
+          color: #fff;
+          font-weight: 700;
+          padding: .5em 2em;
+          border-radius: 40px;
+          margin: 1em 0;
+          transition: .3s; }
+          body .container .content .hero-profil .action-btn:hover {
+            box-shadow: 0 10px 50px #039be5; }
     body .container .footer {
       grid-area: footer;
       color: #fff;
@@ -311,17 +307,17 @@ body {
           display: flex;
           justify-content: space-between;
           flex-direction: column; }
-      body .container .content .overlay .hero-profil {
+      body .container .content .hero-profil {
         text-align: left;
         margin: 2em auto; }
-        body .container .content .overlay .hero-profil .hero-image {
+        body .container .content .hero-profil .hero-image {
           width: 250px;
           float: right; }
-        body .container .content .overlay .hero-profil .hero-title {
+        body .container .content .hero-profil .hero-title {
           font-size: 3em; }
-        body .container .content .overlay .hero-profil .hero-intro {
+        body .container .content .hero-profil .hero-intro {
           width: 60%; }
-        body .container .content .overlay .hero-profil .action-btn {
+        body .container .content .hero-profil .action-btn {
           margin-top: 2em; }
       body .container .footer .footer-container-link .footer-list-link {
         max-width: 960px;
